@@ -13,9 +13,11 @@ class HomePage: BasePage {
     lazy var searchBarButton = HomePage.app.buttons["URL"]
     lazy var searchBarTextField = HomePage.app.textFields["URL"]
     
-    func navigateToAmazon() {
+    func navigateToAmazon() -> AmazonHomePage {
         searchBarButton.tap()
         searchBarTextField.typeText("amazon.com")
         HomePage.app.buttons["Go"].tap()
+        sleep(5)
+        return AmazonHomePage()
     }
 }

@@ -23,7 +23,7 @@ class BaseTest: XCTestCase {
     }
 
     func testExample() {
-        homePage.navigateToAmazon()
+        XCTAssertTrue(homePage.navigateToAmazon().navigateToDealsTab().dealsHeaderIsVisible())
     }
 
 }

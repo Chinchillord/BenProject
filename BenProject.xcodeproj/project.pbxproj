@@ -16,6 +16,8 @@
 		AC06707B229EF79800E109EB /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC06707A229EF79800E109EB /* BaseTest.swift */; };
 		AC067089229EFADB00E109EB /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC067088229EFADB00E109EB /* HomePage.swift */; };
 		AC06708D229EFC9900E109EB /* BasePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC06708C229EFC9900E109EB /* BasePage.swift */; };
+		AC0BF99622A6C37C003A4554 /* AmazonHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0BF99522A6C37C003A4554 /* AmazonHomePage.swift */; };
+		AC0BF99822A6C6EF003A4554 /* DealsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0BF99722A6C6EF003A4554 /* DealsPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		AC06707C229EF79800E109EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC067088229EFADB00E109EB /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		AC06708C229EFC9900E109EB /* BasePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePage.swift; sourceTree = "<group>"; };
+		AC0BF99522A6C37C003A4554 /* AmazonHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonHomePage.swift; sourceTree = "<group>"; };
+		AC0BF99722A6C6EF003A4554 /* DealsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,12 +127,30 @@
 		AC067079229EF79800E109EB /* BenProjectUITests */ = {
 			isa = PBXGroup;
 			children = (
-				AC06707A229EF79800E109EB /* BaseTest.swift */,
+				AC45CE4122A6C0310058F1F7 /* Tests */,
+				AC45CE4022A6C01B0058F1F7 /* Pages */,
 				AC06707C229EF79800E109EB /* Info.plist */,
-				AC067088229EFADB00E109EB /* HomePage.swift */,
-				AC06708C229EFC9900E109EB /* BasePage.swift */,
 			);
 			path = BenProjectUITests;
+			sourceTree = "<group>";
+		};
+		AC45CE4022A6C01B0058F1F7 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				AC06708C229EFC9900E109EB /* BasePage.swift */,
+				AC067088229EFADB00E109EB /* HomePage.swift */,
+				AC0BF99522A6C37C003A4554 /* AmazonHomePage.swift */,
+				AC0BF99722A6C6EF003A4554 /* DealsPage.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		AC45CE4122A6C0310058F1F7 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AC06707A229EF79800E109EB /* BaseTest.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +303,9 @@
 			files = (
 				AC06707B229EF79800E109EB /* BaseTest.swift in Sources */,
 				AC06708D229EFC9900E109EB /* BasePage.swift in Sources */,
+				AC0BF99822A6C6EF003A4554 /* DealsPage.swift in Sources */,
 				AC067089229EFADB00E109EB /* HomePage.swift in Sources */,
+				AC0BF99622A6C37C003A4554 /* AmazonHomePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
